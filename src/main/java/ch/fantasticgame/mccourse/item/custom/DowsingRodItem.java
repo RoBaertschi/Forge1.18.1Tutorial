@@ -25,18 +25,17 @@ public class DowsingRodItem extends Item {
             for(int i = 0; i <= positionClicked.getY() + 64; i++) {
                 Block blockBelow = pContext.getLevel().getBlockState(positionClicked.below(i)).getBlock();
 
-                if(isValuableBlock(blockBelow)) {
+                if (isValuableBlock(blockBelow)) {
                     outputValuableCordinates(positionClicked.below(i), player, blockBelow);
                     foundBlock = true;
                     break;
                 }
-
-                if(!foundBlock) {
-                    player.sendMessage(new TranslatableComponent("item.mccourse.dowsing_rod.no_valuables"),
-                            player.getUUID());
+            }
+            if(!foundBlock) {
+                player.sendMessage(new TranslatableComponent("item.mccourse.dowsing_rod.no_valuables"),
+                        player.getUUID());
                 }
 
-            }
         }
 
         return super.useOn(pContext);
