@@ -11,17 +11,26 @@
   "item.mccourse.cobalt_pickaxe": "Cobalt Pickaxe",
   "item.mccourse.cobalt_hoe": "Cobalt Hoe",
   "item.mccourse.cobalt_paxel": "Cobalt Paxel",
+  "item.mccourse.cobalt_helmet": "Cobalt Helmet",
+  "item.mccourse.cobalt_chestplate": "Cobalt Chestplate",
+  "item.mccourse.cobalt_leggings": "Cobalt Leggings",
+  "item.mccourse.cobalt_boots": "Cobalt Boots",
+  "item.mccourse.cobalt_horse_armor": "Cobalt Horse Armor",
 
   "block.mccourse.cobalt_block": "Cobalt Block",
   "block.mccourse.raw_cobalt_block": "Raw Cobalt Block",
   "block.mccourse.cobalt_ore": "Cobalt Ore",
   "block.mccourse.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
   "block.mccourse.speedy_block": "Speedy Block",
+  "block.mccourse.cobalt_lamp": "Cobalt Lamp",
 
   "itemGroup.coursemodtab": "MCCourse Mod",
 
   "item.mccourse.dowsing_rod.no_valuables": "No Valuables Found!",
   "tooltip.mccourse.dowsing_rod.tooltip.shift": "Right Click to find Valuables!",
   "tooltip.mccourse.dowsing_rod.tooltip": "Press §eSHIFT§r for more Information!",
-  "tooltip.block.speedy_block": "It gets REALLY speedy!"
+  "tooltip.block.speedy_block": "It gets REALLY speedy!",
+
+  "enchantment.mccourse.lightning_striker": "Lightning Striker"
+
 }

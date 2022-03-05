@@ -1,10 +1,8 @@
 package ch.fantasticgame.mccourse.item;
 
 import ch.fantasticgame.mccourse.MCCourseMod;
-import ch.fantasticgame.mccourse.item.custom.CoalSliverItem;
-import ch.fantasticgame.mccourse.item.custom.DowsingRodItem;
-import ch.fantasticgame.mccourse.item.custom.LevitationSwordItem;
-import ch.fantasticgame.mccourse.item.custom.PaxelItem;
+import ch.fantasticgame.mccourse.item.custom.*;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -51,6 +49,23 @@ public class ModItems {
 
     public static final RegistryObject<Item> COBALT_PAXEL = ITEMS.register("cobalt_paxel",
             () -> new PaxelItem(ModTiers.COBALT, 0, 0f,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> COBALT_HELMET = ITEMS.register("cobalt_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+    public static final RegistryObject<Item> COBALT_CHESTPLATE = ITEMS.register("cobalt_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+    public static final RegistryObject<Item> COBALT_LEGGINGS = ITEMS.register("cobalt_leggings",
+            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+    public static final RegistryObject<Item> COBALT_BOOTS = ITEMS.register("cobalt_boots",
+            () -> new ArmorItem(ModArmorMaterials.COBALT, EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
+
+    public static final RegistryObject<Item> COBALT_HORSE_ARMOR = ITEMS.register("cobalt_horse_armor",
+            () -> new HorseArmorItem(12, "cobalt",
                     new Item.Properties().tab(ModCreativeModeTab.COURSE_TAB)));
 
     public static void register(IEventBus eventBus) {

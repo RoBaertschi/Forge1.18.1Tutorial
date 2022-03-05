@@ -1,6 +1,7 @@
 package ch.fantasticgame.mccourse.block;
 
 import ch.fantasticgame.mccourse.MCCourseMod;
+import ch.fantasticgame.mccourse.block.custom.CobaltLampBlock;
 import ch.fantasticgame.mccourse.block.custom.SpeedyBlock;
 import ch.fantasticgame.mccourse.item.ModCreativeModeTab;
 import ch.fantasticgame.mccourse.item.ModItems;
@@ -44,6 +45,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPEEDY_BLOCK = registerBlock("speedy_block",
             () -> new SpeedyBlock(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(4f).requiresCorrectToolForDrops()),  ModCreativeModeTab.COURSE_TAB, "tooltip.block.speedy_block");
+
+    public static final RegistryObject<Block> COBALT_LAMP = registerBlock("cobalt_lamp",
+            () -> new CobaltLampBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(4f).requiresCorrectToolForDrops().lightLevel((state) -> state.getValue(CobaltLampBlock.CLICKED) ? 15 : 0)),
+            ModCreativeModeTab.COURSE_TAB);
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab, String tooltipKey) {

@@ -1,6 +1,7 @@
 package ch.fantasticgame.mccourse;
 
 import ch.fantasticgame.mccourse.block.ModBlocks;
+import ch.fantasticgame.mccourse.enchantment.ModEnchantments;
 import ch.fantasticgame.mccourse.item.ModItems;
 import ch.fantasticgame.mccourse.util.ModTags;
 import net.minecraft.world.level.block.Block;
@@ -36,6 +37,8 @@ public class MCCourseMod
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+
+        ModEnchantments.register(eventBus);
 
         ModTags.register();
 
